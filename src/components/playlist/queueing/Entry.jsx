@@ -13,6 +13,7 @@ import {
 } from 'components/permissions/Playlist'
 import PlayQueueInfo from 'components/song/PlayQueueInfo'
 import Song from 'components/song/Song'
+import { alterationResponsePropType } from 'reducers/alterationsResponse'
 import { playlistEntryPropType } from 'serverPropTypes/playlist'
 
 class Entry extends Component {
@@ -25,7 +26,8 @@ class Entry extends Component {
         removeEntry: PropTypes.func.isRequired,
         reorderEntryPosition: PropTypes.number,
         responseOfMultipleReorderPlaylistEntry: PropTypes.object,
-        responseOfRemoveEntry: PropTypes.object,
+        responseOfRemoveEntry: alterationResponsePropType,
+        responseOfReorderPlaylistEntry: alterationResponsePropType,
     }
 
     state = {

@@ -24,6 +24,7 @@ import {
     playlistEntryPropType,
     playlistPlayedEntryPropType
 } from 'serverPropTypes/playlist'
+import { userPropType } from 'serverPropTypes/users'
 
 
 class SongEntry extends Component {
@@ -43,6 +44,7 @@ class SongEntry extends Component {
         searchParams: PropTypes.object.isRequired,
         setSearchParams: PropTypes.func.isRequired,
         song: songPropType.isRequired,
+        user: userPropType.isRequired,
     }
 
     componentWillUnmount() {

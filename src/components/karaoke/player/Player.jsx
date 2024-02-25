@@ -15,6 +15,7 @@ import ArtistWidget from 'components/song/ArtistWidget'
 import WorkLinkWidget from 'components/song/WorkLinkWidget'
 import { alterationResponsePropType, Status } from 'reducers/alterationsResponse'
 import { playlistDigestPropType } from 'reducers/playlist'
+import { userPropType } from 'serverPropTypes/users'
 import { formatDuration } from 'utils'
 
 class Player extends Component {
@@ -23,6 +24,8 @@ class Player extends Component {
         responseOfSendPlayerCommands: PropTypes.objectOf(alterationResponsePropType),
         sendPlayerCommand: PropTypes.func.isRequired,
         setWithControls: PropTypes.func.isRequired,
+        user: userPropType.isRequired,
+        navigate: PropTypes.func.isRequired,
     }
 
     state = {

@@ -11,7 +11,7 @@ import Notification from 'components/generics/Notification'
 import TokenWidget from 'components/generics/TokenWidget'
 import { IsLibraryManager } from 'components/permissions/Library'
 import { IsPlaylistManager } from 'components/permissions/Playlist'
-import { Status } from 'reducers/alterationsResponse'
+import { alterationResponsePropType, Status } from 'reducers/alterationsResponse'
 import { playerTokenStatePropType } from 'reducers/playlist'
 import { karaokePropType } from 'serverPropTypes/playlist'
 
@@ -25,6 +25,7 @@ class PlayerTokenBox extends Component {
         responseOfCreatePlayerToken: PropTypes.object,
         responseOfRevokeToken: PropTypes.object,
         revokePlayerToken: PropTypes.func.isRequired,
+        responseOfRevokePlayerToken: alterationResponsePropType,
     }
 
     state = {
