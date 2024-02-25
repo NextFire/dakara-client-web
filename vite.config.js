@@ -31,8 +31,8 @@ export default defineConfig({
     },
   },
   define: {
-    'process.env.DAKARA_VERSION': JSON.stringify(packageJson.version),
-    'process.env.DAKARA_BUGTRACKER': JSON.stringify(packageJson.bugs.url),
-    'process.env.DAKARA_PROJECT_HOMEPAGE': JSON.stringify(packageJson.homepage),
+    __DAKARA_VERSION__: JSON.stringify(packageJson.version),
+    __DAKARA_BUGTRACKER__: JSON.stringify(packageJson.bugs.url),
+    __DAKARA_PROJECT_HOMEPAGE__: JSON.stringify(packageJson.homepage),
   },
 });

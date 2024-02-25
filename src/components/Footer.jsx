@@ -2,9 +2,12 @@ import { Component } from 'react'
 
 export default class Footer extends Component {
     render() {
-        const version = process.env.DAKARA_VERSION
-        const bugtracker = process.env.DAKARA_BUGTRACKER
-        const projectHomepage = process.env.DAKARA_PROJECT_HOMEPAGE
+        // eslint-disable-next-line no-undef
+        const version = __DAKARA_VERSION__
+        // eslint-disable-next-line no-undef
+        const bugtracker = __DAKARA_BUGTRACKER__
+        // eslint-disable-next-line no-undef
+        const projectHomepage = __DAKARA_PROJECT_HOMEPAGE__
 
         return (
             <footer id="footer" className="box">
