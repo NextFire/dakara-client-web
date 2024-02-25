@@ -25,4 +25,5 @@ class Forbidden extends Component {
     }
 }
 
-export default withLocation(Forbidden)
+const ForbiddenWithLocation = withLocation(Forbidden)
+export default ForbiddenWithLocation

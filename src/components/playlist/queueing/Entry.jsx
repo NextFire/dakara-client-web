@@ -160,4 +160,5 @@ class Entry extends Component {
     }
 }
 
-export default withNavigate(Entry)
+const EntryWithNavigate = withNavigate(Entry)
+export default EntryWithNavigate

@@ -106,4 +106,5 @@ class Navigator extends Component {
     }
 }
 
-export default withLocation(Navigator)
+export const NavigatorWithLocation = withLocation(Navigator)
+export default NavigatorWithLocation

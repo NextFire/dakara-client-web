@@ -59,4 +59,5 @@ class WorkEntry extends Component {
     }
 }
 
-export default withNavigate(WorkEntry)
+export const WorkEntryWithNavigate = withNavigate(WorkEntry)
+export default WorkEntryWithNavigate
